@@ -4,9 +4,7 @@ import cv2
 from math import sqrt
 import os
 #slava
-print("sssss")
 def solution(obs):
-    env = self.generated_task['env']
     image = cv2.cvtColor(obs, cv2.COLOR_BGR2HSV)
     Y,X, _ = image.shape
     centrX = int(X/2)
