@@ -6,6 +6,7 @@ import os
 
 def solution(obs):
     print(obs.shape)
+    print("1")
     #env = self.generated_task['env']
     #obs, _, _, _ = env.step([0,0])
     image = cv2.cvtColor(obs, cv2.COLOR_BGR2HSV)
@@ -77,14 +78,14 @@ def solution(obs):
         if xRazmetkaYpred>int(centrX+(int(centrX/3))):
             xRazmetkaYpred =  int(centrX-(int(centrX/2)))
         raschet = 1
-    k = 0.09
-    vel = 0.6
+    k = 0.0034
+    vel = 0.3
     xRazmetkaY = xRazmetkaYpred
     poloz = int((int(X-(X/16.5)) + xRazmetkaY)/2)
     razn = centrX - poloz
         #print(razn)
     if xRazmetkaY == xRazmetkaYpred and loop == 1 and razn>0:
-        k = 0.10*k1
+        k = 0.004*k1
         k1+=0.01
         vel -= vel*((k1-1)*2.15)
                 #print("povorot", k1, vel)
