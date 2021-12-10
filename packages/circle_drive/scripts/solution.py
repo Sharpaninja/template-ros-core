@@ -78,7 +78,7 @@ def solution(obs):
         if xRazmetkaYpred>int(centrX+(int(centrX/3))):
             xRazmetkaYpred =  int(centrX-(int(centrX/2)))
         raschet = 1
-    k = 0.0034
+    k = 0.09
     vel = 0.3
     xRazmetkaY = xRazmetkaYpred
     poloz = int((int(X-(X/16.5)) + xRazmetkaY)/2)
