@@ -91,9 +91,9 @@ def solution(obs):
                 #print("povorot", k1, vel)
         else: 
             k1 =1
-        if razn >= 0:
-            angle = k*(razn+1)
         if razn < 0:
+            angle = k*(razn+1)
+        if razn >= 0:
             angle = k*razn
             #else:
             #    print("else")
