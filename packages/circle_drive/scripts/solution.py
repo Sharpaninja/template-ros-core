@@ -53,7 +53,7 @@ def solution(obs):
                     x,y = cord
                     x = int(x)
                     y = int(y)
-                    if y > centrY+50:
+                    if y > centrY:
                         if abs(x0-x)<120 and int(sqrt(np.power((x-x0), 2)+np.power((y-y0),2)))<130:
                             if count == 0:
                                 index0 = i
@@ -79,7 +79,7 @@ def solution(obs):
                 xRazmetkaYpred =  int(centrX-(int(centrX/2)))
             raschet = 1
         k = 0.09
-        vel = 0.9
+        vel = 0.6
         xRazmetkaY = xRazmetkaYpred
         poloz = int((int(X-(X/16.5)) + xRazmetkaY)/2)
         razn = centrX - poloz
