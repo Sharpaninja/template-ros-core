@@ -1,4 +1,4 @@
-from gym_duckietown.tasks.task_solution import TaskSolution
+
 import numpy as np
 import cv2
 from math import sqrt
