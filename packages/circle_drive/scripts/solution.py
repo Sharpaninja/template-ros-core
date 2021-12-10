@@ -6,7 +6,7 @@ import os
 
 def solution(obs):
     print(obs.shape)
-    print("1")
+    print("2")
     #env = self.generated_task['env']
     #obs, _, _, _ = env.step([0,0])
     image = cv2.cvtColor(obs, cv2.COLOR_BGR2HSV)
